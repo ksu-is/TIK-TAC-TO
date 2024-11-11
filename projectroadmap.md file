@@ -1,2 +1,20 @@
-Exploring at least one existing Python code base related to my project and evaluating using it in my project
-https://youtu.be/8ext9G7xspg?si=DUjIpCYEIF7ZF56p  
+Exploring an existing Python code base related to my project and evaluating using it for my project
+
+In this video, the functionality of the Tic-Tac-Toe code is demonstrated, showcasing how the game can be played in three different modes:
+
+1. **Human vs. Computer**:
+   - In this mode, a human player competes against an AI-controlled opponent. The computer uses an algorithm to determine its moves, making the game challenging for the human player. The AI can be programmed with strategies ranging from random moves to an unbeatable strategy using techniques like the Minimax algorithm.
+   - The game alternates turns, with the human choosing a cell first, followed by the computer making its calculated move. The aim is for the human to either win by placing three marks in a row or prevent the computer from winning.
+
+2. **Human vs. Human**:
+   - This mode allows two human players to face off against each other. Each player takes turns placing their mark on the board, with the game alternating between Player X and Player O.
+   - The game continues until one player achieves three consecutive marks in a row (horizontal, vertical, or diagonal), or until all cells are filled without a winner, resulting in a tie.
+
+3. **Computer vs. Computer**:
+   - In this mode, both players are AI-controlled. This feature allows the computer to play against itself, showcasing the algorithm's decision-making process without human input.
+   - The game runs automatically, with each AI making its move according to its programmed strategy. Watching two AIs play against each other can provide insight into the effectiveness of the AI’s strategy and demonstrate its moves from start to finish.
+
+Each mode is designed to highlight different aspects of the code, such as user input handling, algorithmic decision-making, and game flow control. This variety of play options makes the Tic-Tac-Toe program versatile and interactive, allowing users to explore various gameplay scenarios and AI strategies.
+
+
+(https://youtu.be/8ext9G7xspg?si=DUjIpCYEIF7ZF56p)  
