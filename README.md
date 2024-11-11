@@ -13,12 +13,10 @@ Tic-Tac-Toe is a two-player game where players take turns marking a grid. The go
 - Input validation to ensure only valid moves are accepted
 - Win and Lose detection
 
-## Getting Started
-
 ### Prerequisites
 
 - Python 3.x
 
-### Installation
-
-1. **Clone this repository**:
+### Further Instruction if Unclear 
+(https://youtu.be/3qzcAMShotQ?si=efEKxA8RZJWR1BJk)
+![image](https://github.com/user-attachments/assets/054cf835-8737-4a34-bc0b-ef7d6067f1d2)
