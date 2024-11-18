@@ -17,3 +17,18 @@ for col in range(3):
     if all(board[i][i] == player for i in range(3)) or all(board[i][2 - i] == player for i in range(3)):
         return True
     return False
+# Function to check if the board is full
+def is_full(board):
+    return all(cell != " " for row in board for cell in row)
+
+# Function for the AI's move
+def ai_move(board):
+    # Check for winning move or block player
+    for player in ["O", "X"]:  # Prioritize AI's win (O), then block player (X)
+        for row in range(3):
+            for col in range(3):
+                if board[row][col] == " ":
+                    board[row][col] = player
+                    if check_winner(board, player):
+                        return
+                    board[row][col] = " "  # Undo move
