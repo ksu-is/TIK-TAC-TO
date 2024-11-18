@@ -1,3 +1,4 @@
+Sprint 1
 Exploring an existing Python code base related to my project and evaluating using it for my project
 
 In this video, the functionality of the Tic-Tac-Toe code is demonstrated, showcasing how the game can be played in three different modes:
@@ -18,3 +19,28 @@ Each mode is designed to highlight different aspects of the code, such as user i
 
 
 (https://youtu.be/8ext9G7xspg?si=DUjIpCYEIF7ZF56p)  
+
+Sprint 2 
+"Making small updates and adding commit messages with them in your repository so that your work is visible"
+
+Step 1: Set up the initial game board
+Implement the print_board function to display the board.
+Create the main game loop structure with a placeholder for player moves.
+Add a basic representation of the board.
+
+Step 2: Add player input functionality
+Implement user input to place an "X" on the board.
+Add validation to ensure the input corresponds to an empty cell.
+
+Step 3: Implement win and tie conditions
+Add the check_winner function to detect a win condition for rows, columns, and diagonals.
+Add the is_full function to detect tie conditions when the board is full.
+
+Step 4: Introduce AI moves
+Create the ai_move function with logic to prioritize winning moves and block player moves.
+Allow the AI to play as "O" and take turns after the player.
+
+Step 5: Finalize the game loop
+Combine all components to alternate turns between the player and the AI.
+Add win/tie checks after each move.
+Add user-friendly messages for game progress and outcomes.
