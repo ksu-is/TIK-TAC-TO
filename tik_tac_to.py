@@ -32,3 +32,59 @@ def ai_move(board):
                     if check_winner(board, player):
                         return
                     board[row][col] = " "  # Undo move
+                    
+# Otherwise, choose a random empty cell
+    empty_cells = [(row, col) for row in range(3) for col in range(3) if board[row][col] == " "]
+    if empty_cells:
+        row, col = random.choice(empty_cells)
+        board[row][col] = "O"
+
+# Main game function
+def tic_tac_toe():
+    # Initialize the game board
+    board = [[" " for _ in range(3)] for _ in range(3)]
+
+    print("Welcome to Tic-Tac-Toe!")
+    print("You are 'X'. AI is 'O'.")
+    print_board(board)
+     while True:
+        # Player's turn
+        print("Your turn.")
+        try:
+            row = int(input("Enter row (0-2): "))
+            col = int(input("Enter column (0-2): "))
+            if board[row][col] == " ":
+                board[row][col] = "X"
+                print_board(board)
+
+                # Check for winner
+                if check_winner(board, "X"):
+                    print("You win! Congratulations!")
+                    break
+
+                # Check for a tie
+                if is_full(board):
+                    print("It's a tie!")
+                    break
+
+                # AI's turn
+                print("AI's turn...")
+                ai_move(board)
+                print_board(board)
+
+                # Check for winner
+                if check_winner(board, "O"):
+                    print("AI wins! Better luck next time.")
+                    break
+
+                # Check for a tie
+                if is_full(board):
+                    print("It's a tie!")
+                    break
+            else:
+                print("Cell is already taken. Try again.")
+        except (ValueError, IndexError):
+            print("Invalid input. Please enter numbers between 0 and 2.")
+
+if __name__ == "__main__":
+    tic_tac_toe()
